@@ -16,5 +16,5 @@ app.use('/player', playerRoutes)
 app.use('/user', userRoutes)
 
 app.listen(port, () => {
-  return console.log(`Express is listening at http://localhost:${port}`)
+  return console.log(`Express is listening at http://localhost :${port}`)
 })
