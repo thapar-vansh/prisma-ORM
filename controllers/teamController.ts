@@ -6,14 +6,14 @@ import {
   deleteTeamService,
   getTeamsService,
 } from '../services/teamService'
-import { Team } from '@prisma/client'
+import {team } from '@prisma/client'
 export const addTeam = async (
   req: Request,
   res: Response
 ): Promise<Response> => {
   try {
-    const { name, teamId } = req.body
-    await addTeamService(name, teamId)
+    const { name } = req.body
+    await addTeamService(name)
     return res.send('Team added')
   } catch (e) {
     Logger.error(e)
@@ -26,7 +26,7 @@ export const getTeams = async (
   res: Response
 ): Promise<Response> => {
   try {
-    const teams: Team[] | null = await getTeamsService()
+    const teams: team[] | null = await getTeamsService()
     return res.send(teams)
   } catch (e) {
     Logger.error(e)
@@ -39,7 +39,7 @@ export const deleteTeam = async (
   res: Response
 ): Promise<Response> => {
   try {
-    const id: string = req.params.teamId
+    const id: string = req.params.id
     await deleteTeamService(Number(id))
     return res.send('Deleted team')
   } catch (e) {

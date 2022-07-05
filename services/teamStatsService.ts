@@ -1,8 +1,10 @@
-import { prisma } from '../src/index'
-import { TeamStats } from '@prisma/client'
+import prisma from '../src/index'
+import { team_stats } from '@prisma/client'
 
-export const getTeamStatsService = async (id: number): Promise<TeamStats | null> => {
-  const teamStats: TeamStats | null = await prisma.teamStats.findUnique({
+export const getTeamStatsService = async (
+  id: number
+): Promise<team_stats | null> => {
+  const teamStats: team_stats | null = await prisma.team_stats.findUnique({
     where: {
       id: id,
     },
@@ -10,31 +12,25 @@ export const getTeamStatsService = async (id: number): Promise<TeamStats | null>
   if (!teamStats) {
     throw new Error('Team not found')
   }
-  return teamStats as TeamStats
+  return teamStats as team_stats
 }
 
-export const 
-updateTeamStatsService = async (
+export const updateTeamStatsService = async (
   id: number,
   matchesWon: number,
   matchesLost: number
-): Promise<void> => {
-  if (matchesLost + matchesWon === 14) {
-    await prisma.teamStats.upsert({
+): Promise<number> => {
+  if (matchesLost + matchesWon == 14) {
+    await prisma.team_stats.update({
       where: {
         id: id,
       },
-      update: {
-        matchesLost: matchesLost,
-        matchesWon: matchesWon,
+      data: {
+        matches_lost: matchesLost,
+        matches_won: matchesWon,
       },
-      create:{
-        id:id,
-        totalMatches:14,
-        matchesLost:matchesLost,
-        matchesWon:matchesWon
-      }
     })
+    return 0
   } else {
     throw new Error('Data not valid')
   }

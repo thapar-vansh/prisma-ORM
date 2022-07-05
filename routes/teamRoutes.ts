@@ -10,7 +10,7 @@ export const router: Router = express.Router()
 
 router.post('/', addTeam)
 router.get('/', getTeams)
-router.delete('/:teamId', deleteTeam)
+router.delete('/:id', deleteTeam)
 
-router.post('/stats/:id', updateTeamStats)
+router.put('/stats/:id', updateTeamStats)
 router.get('/stats/:id', getTeamStats)

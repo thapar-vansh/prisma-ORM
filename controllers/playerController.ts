@@ -1,4 +1,4 @@
-import { Player } from '@prisma/client'
+import {player } from '@prisma/client'
 import { Request, Response } from 'express'
 import { Logger } from '../src/lib/logger'
 
@@ -28,7 +28,7 @@ export const getPlayers = async (
   res: Response
 ): Promise<Response> => {
   try {
-    const players: Player[] = await getPlayersService()
+    const players: player[] = await getPlayersService()
     return res.send(players)
   } catch (e) {
     Logger.error(e)

@@ -5,7 +5,7 @@ import {
   getTeamStatsService,
   updateTeamStatsService,
 } from '../services/teamStatsService'
-import { Team, TeamStats } from '@prisma/client'
+import {  team_stats } from '@prisma/client'
 
 export const updateTeamStats = async (
   req: Request,
@@ -13,9 +13,8 @@ export const updateTeamStats = async (
 ): Promise<Response> => {
   try {
     const id: string = req.params.id
-    const { matchesWon, matchesLost } = req.body
-    await updateTeamStatsService(Number(id), matchesWon, matchesLost)
-
+    const { matches_won, matches_lost } = req.body
+    await updateTeamStatsService(Number(id), matches_won, matches_lost)
     return res.send('Updated match stats')
   } catch (e) {
     Logger.error(e)
@@ -29,7 +28,7 @@ export const getTeamStats = async (
 ): Promise<Response> => {
   try {
     const id: string = req.params.id
-    const team: TeamStats | null = await getTeamStatsService(Number(id))
+    const team: team_stats | null = await getTeamStatsService(Number(id))
     return res.send(team)
   } catch (e) {
     Logger.error(e)

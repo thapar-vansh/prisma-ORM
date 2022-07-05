@@ -29,3 +29,89 @@
 2022-07-01 15:22:52:2252 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-01 15:23:35:2335 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-01 15:23:41:2341 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-01 18:45:36:4536 [31merror[39m: [31mTeam not found[39m
+2022-07-03 16:06:57:657 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 16:07:21:721 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:13:38:1338 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:23[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<void> => {[39m
+[31m→  8   await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-07-03 21:13:55:1355 [31merror[39m: [31mNo players found[39m
+2022-07-03 21:18:24:1824 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:18:31:1831 [31merror[39m: [31mNo players found[39m
+2022-07-03 21:20:57:2057 [31merror[39m: [31mNo teams found[39m
+2022-07-03 21:28:46:2846 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:29:57:2957 [31merror[39m: [31mNo teams found[39m
+2022-07-03 21:41:28:4128 [31merror[39m: [31mTeam not found[39m
+2022-07-03 21:42:15:4215 [31merror[39m: [31mData not valid[39m
+2022-07-03 21:43:18:4318 [31merror[39m: [31mData not valid[39m
+2022-07-03 21:43:33:4333 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:43:44:4344 [31merror[39m: [31mData not valid[39m
+2022-07-03 21:56:03:563 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:57:44:5744 [31merror[39m: [31mData not valid[39m
+2022-07-03 21:57:58:5758 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:58:05:585 [31merror[39m: [31mData not valid[39m
+2022-07-03 21:58:37:5837 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 21:58:54:5854 [31merror[39m: [31mData not valid[39m
+2022-07-03 22:00:09:09 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:00:21:021 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:08:14:814 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:08:28:828 [31merror[39m: [31m[39m
+[31mInvalid `prisma.team_stats.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\teamService.ts:8:27[39m
+
+[31m   5 export const addTeamService = async ([39m
+[31m   6   name: string,[39m
+[31m   7 ): Promise<void> => {[39m
+[31m→  8   await prisma.team_stats.create([39m
+[31m  Foreign key constraint failed on the field: `team_stats_id_fkey (index)`[39m
+2022-07-03 22:09:39:939 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:09:44:944 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:09:52:952 [31merror[39m: [31m[39m
+[31mInvalid `prisma.team_stats.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\teamService.ts:13:27[39m
+
+[31m  10     name: name as string,[39m
+[31m  11   },[39m
+[31m  12 })[39m
+[31m→ 13 await prisma.team_stats.create([39m
+[31m  Foreign key constraint failed on the field: `team_stats_id_fkey (index)`[39m
+2022-07-03 22:13:29:1329 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:14:18:1418 [31merror[39m: [31mTeam not found[39m
+2022-07-03 22:15:46:1546 [31merror[39m: [31mTeam not found[39m
+2022-07-03 22:15:50:1550 [31merror[39m: [31m[39m
+[31mInvalid `prisma.team_stats.upsert()` invocation:[39m
+
+
+[31m  Foreign key constraint failed on the field: `team_stats_id_fkey (index)`[39m
+2022-07-03 22:19:51:1951 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:23:10:2310 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:28:12:2812 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:32:39:3239 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:32:55:3255 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:34:35:3435 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-03 22:35:00:350 [31merror[39m: [31mNo players found[39m
+2022-07-04 18:26:09:269 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-04 18:29:00:290 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 14:25:50:2550 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:27:50:2750 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:32:22:3222 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:32:30:3230 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:33:04:334 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:33:25:3325 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-05 16:33:32:3332 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m

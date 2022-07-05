@@ -1,49 +1,47 @@
-import { Team } from '@prisma/client'
-import { prisma } from '../src/index'
+import { team } from '@prisma/client'
+import prisma from '../src/index'
 import { getTeamStatsService } from './teamStatsService'
 
-export const addTeamService = async (
-  name: string,
-  teamId: number
-): Promise<void> => {
-  await prisma.teamStats.create({
+export const addTeamService = async (name: string): Promise<number> => {
+  await prisma.team_stats.create({
     data: {
-      id: teamId as number,
-      totalMatches: 14,
-      matchesWon: 0,
-      matchesLost: 0,
+      total_matches: 14,
+      matches_won: 0,
+      matches_lost: 0,
     },
   })
 
   await prisma.team.create({
     data: {
       name: name as string,
-      teamId: teamId as number,
     },
   })
+
+  return 0
 }
 
-export const getTeamsService = async (): Promise<Team[] | null> => {
-  const teams: Team[] = await prisma.team.findMany()
+export const getTeamsService = async (): Promise<team[] | null> => {
+  const teams: team[] = await prisma.team.findMany()
   if (teams.length === 0) {
     throw new Error('No teams found')
   }
   return teams
 }
 
-export const deleteTeamService = async (id: number): Promise<void> => {
+export const deleteTeamService = async (id: number): Promise<number> => {
   const team = await getTeamStatsService(id)
   if (team) {
     await prisma.team.delete({
       where: {
-        teamId: Number(id),
+        id: Number(id),
       },
     })
-    await prisma.teamStats.delete({
+    await prisma.team_stats.delete({
       where: {
         id: Number(id),
       },
     })
+    return 0
   } else {
     throw new Error('Invalid id ! Team does not exists')
   }

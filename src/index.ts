@@ -6,7 +6,8 @@ import { router as teamRoutes } from '../routes/teamRoutes'
 import { PrismaClient } from '@prisma/client'
 import { Logger } from './lib/logger'
 
-export const prisma = new PrismaClient()
+const prisma = new PrismaClient()
+export default prisma
 
 const app = express()
 dotenv.config()

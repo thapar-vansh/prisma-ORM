@@ -7,25 +7,23 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Player {
+model player {
   id      Int      @id @default(autoincrement())
   name    String  
   country String
 }
 
-
-model Team {
-  id       Int  @id @default(autoincrement())
-  name     String
-  team     TeamStats @relation(fields: [teamId], references: [id],onDelete: Cascade)
-  teamId   Int @unique
+model team {
+  id            Int  @id @default(autoincrement())
+  name          String
+  team_stats    team_stats @relation(fields: [id], references: [id],onDelete: Cascade)
 }
 
-model TeamStats {
-  id           Int    @id @default(autoincrement())
-  teams        Team[]
-  totalMatches Int
-  matchesWon   Int
-  matchesLost  Int
+model team_stats {
+  id            Int    @id @default(autoincrement())
+  teams         team[]
+  total_matches Int
+  matches_won   Int
+  matches_lost  Int
 }
 
