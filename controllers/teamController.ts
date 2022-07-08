@@ -6,7 +6,7 @@ import {
   deleteTeamService,
   getTeamsService,
 } from '../services/teamService'
-import {team } from '@prisma/client'
+import { team } from '@prisma/client'
 export const addTeam = async (
   req: Request,
   res: Response
@@ -17,6 +17,9 @@ export const addTeam = async (
     return res.send('Team added')
   } catch (e) {
     Logger.error(e)
+    if (e instanceof Error) {
+      return res.status(400).send('No team created !')
+    }
     return res.status(400).send('Something went wrong')
   }
 }
@@ -30,6 +33,9 @@ export const getTeams = async (
     return res.send(teams)
   } catch (e) {
     Logger.error(e)
+    if (e instanceof Error) {
+      return res.status(404).send('No teams found')
+    }
     return res.status(400).send('Something went wrong')
   }
 }
@@ -44,6 +50,9 @@ export const deleteTeam = async (
     return res.send('Deleted team')
   } catch (e) {
     Logger.error(e)
+    if (e instanceof Error) {
+      return res.status(404).send('Invalid id ! Team does not exists')
+    }
     return res.status(400).send('Something went wrong')
   }
 }

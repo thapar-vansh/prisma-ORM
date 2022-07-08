@@ -3,6 +3,28 @@
     { "id": 1, "name": "vansh", "country": "india" },
     { "id": 2, "name": "ansh", "country": "india" }
   ],
+  "addTeamSuccess": { "id": 1, "name": "kkr" },
+  "deleteTeamSuccess": { "id": 1, "name": "kkr" },
+  "deleteTeamStatsSuccess": {
+    "id": 1,
+    "total_matches": 14,
+    "matches_won": 0,
+    "matches_lost": 0
+  },
+  "updateTeamStatsSuccess": {
+    "id": 1,
+    "total_matches": 14,
+    "matches_won": 8,
+    "matches_lost": 6
+  },
+
+  "addTeamStatsSuccess": {
+    "id": 1,
+    "total_matches": 14,
+    "matches_won": 0,
+    "matches_lost": 0
+  },
+
   "getTeamsSuccess": [
     { "id": 1, "name": "kkr" },
     { "id": 2, "name": "csk" }
@@ -12,5 +34,25 @@
     "total_matches": 14,
     "matches_won": 8,
     "matches_lost": 6
+  },
+  "addPlayerSuccess": {
+    "id": 1,
+    "name": "vansh",
+    "country": "india"
+  },
+  "getPlayerByIdSuccess": {
+    "id": 1,
+    "name": "vansh",
+    "country": "india"
+  },
+  "deletePlayerSuccess": {
+    "id": 1,
+    "name": "vansh",
+    "country": "india"
+  },
+  "updatePlayerSuccess": {
+    "id": 1,
+    "name": "ansh",
+    "country": "india"
   }
 }

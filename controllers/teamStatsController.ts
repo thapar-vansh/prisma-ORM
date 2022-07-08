@@ -5,7 +5,7 @@ import {
   getTeamStatsService,
   updateTeamStatsService,
 } from '../services/teamStatsService'
-import {  team_stats } from '@prisma/client'
+import { team_stats } from '@prisma/client'
 
 export const updateTeamStats = async (
   req: Request,
@@ -18,6 +18,9 @@ export const updateTeamStats = async (
     return res.send('Updated match stats')
   } catch (e) {
     Logger.error(e)
+    if (e instanceof Error) {
+      return res.status(400).send('Data not valid')
+    }
     return res.status(400).send('Something went wrong')
   }
 }
@@ -32,6 +35,9 @@ export const getTeamStats = async (
     return res.send(team)
   } catch (e) {
     Logger.error(e)
+    if (e instanceof Error) {
+      return res.status(404).send('Team not found')
+    }
     return res.status(400).send('Something went wrong')
   }
 }

@@ -115,3 +115,67 @@
 2022-07-05 16:33:04:334 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-05 16:33:25:3325 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-05 16:33:32:3332 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-06 17:53:17:5317 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-06 17:55:11:5511 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-07 18:53:40:5340 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-07 19:00:53:053 [31merror[39m: [31mTeam not found[39m
+2022-07-07 19:02:31:231 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-07 19:02:40:240 [31merror[39m: [31m[39m
+[31mInvalid `prisma.team.delete()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\teamService.ts:33:34[39m
+
+[31m  30 }[39m
+[31m  31 await deleteTeamStats(id)[39m
+[31m  32 [39m
+[31m→ 33 return await prisma.team.delete([39m
+[31m  An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2022-07-07 19:19:27:1927 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:20:45:2045 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:21:15:2115 [31merror[39m: [31mNo players found[39m
+2022-07-08 15:21:47:2147 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:21:51:2151 [31merror[39m: [31mNo players found[39m
+2022-07-08 15:22:27:2227 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:22:30:2230 [31merror[39m: [31mNo players found[39m
+2022-07-08 15:22:42:2242 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:22:46:2246 [31merror[39m: [31mNo players found[39m
+2022-07-08 15:23:31:2331 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:23:34:2334 [31merror[39m: [31mNo players found[39m
+2022-07-08 15:24:04:244 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:24:24:2424 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:24:41:2441 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:25:38:2538 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:25:52:2552 [31merror[39m: [31mNo players found ![39m
+2022-07-08 15:31:45:3145 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:33:52:3352 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:35:03:353 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:35:19:3519 [31merror[39m: [31mNo players found ![39m
+2022-07-08 15:36:03:363 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:36:07:367 [31merror[39m: [31mNo players found ![39m
+2022-07-08 15:36:46:3646 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:37:05:375 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:37:33:3733 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:38:29:3829 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:38:43:3843 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:38:57:3857 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:39:17:3917 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:39:46:3946 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:40:04:404 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:40:52:4052 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:41:25:4125 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:41:51:4151 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:42:19:4219 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:42:32:4232 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:42:54:4254 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:43:08:438 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:43:26:4326 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:43:41:4341 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:45:33:4533 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:45:52:4552 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:45:58:4558 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:46:24:4624 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:46:44:4644 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:47:52:4752 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:48:08:488 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:48:35:4835 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:48:46:4846 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-08 15:49:11:4911 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
