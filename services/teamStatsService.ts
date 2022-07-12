@@ -23,7 +23,7 @@ export const getTeamStatsService = async (
       id: id,
     },
   })
-  if (!teamStats) {
+  if (teamStats === null) {
     throw new Error('Team not found')
   }
   return teamStats
@@ -56,7 +56,7 @@ export const deleteTeamStats = async (id: number): Promise<team_stats> => {
     },
   })
   if (!deletedTeamStats) {
-    throw new Error('No stats created !')
+    throw new Error('No stats deleted !')
   }
   return deletedTeamStats
 }

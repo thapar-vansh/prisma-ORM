@@ -29,12 +29,8 @@ export const getTeamsService = async (): Promise<team[]> => {
 
 export const deleteTeamService = async (
   id: number
-): Promise<team_stats | team> => {
+): Promise<team_stats | team | null> => {
   const team = await getTeamStatsService(id)
-  if (team === null) {
-    throw new Error('Invalid id ! Team does not exists')
-  }
-
   await prisma.team.delete({
     where: {
       id: id,

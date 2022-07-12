@@ -16,7 +16,6 @@ export const addPlayerService = async (
   }
   return result
 }
-
 export const getPlayersService = async (): Promise<player[]> => {
   const players: player[] = await prisma.player.findMany()
   if (players.length === 0) {
@@ -63,7 +62,9 @@ export const getPlayerByIdService = async (
   return player
 }
 
-export const deletePlayerService = async (id: number): Promise<player> => {
+export const deletePlayerService = async (
+  id: number
+): Promise<player | null> => {
   const player = await getPlayerByIdService(id)
   if (player === null) {
     throw new Error('Player not found !')
