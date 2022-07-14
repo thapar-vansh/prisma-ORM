@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest -c ./jest.unit.json",
     "test:coverage": "jest --coverage -c ./jest.unit.json",
-    "start": "nodemon src/index.ts"
+    "start": "node src/index.ts",
+    "start:dev": "nodemon src/index.ts"
   },
   "author": "Vansh Thapar",
   "license": "ISC",
