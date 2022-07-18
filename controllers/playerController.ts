@@ -8,7 +8,6 @@ import {
   getPlayersService,
   updatePlayerService,
 } from '../services/playerService'
-import { ExceptionHandler } from 'winston'
 
 export const addPlayer = async (
   req: Request,
