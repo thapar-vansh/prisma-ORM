@@ -270,3 +270,12 @@
 [31m  Foreign key constraint failed on the field: `team_id_fkey (index)`[39m
 2022-07-18 17:03:35:335 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-19 02:51:11:5111 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-19 02:57:06:576 [37mdebug[39m: [37mExpress is listening at http://localhost:5000[39m
+2022-07-19 02:57:45:5745 [31merror[39m: [31mNo players found ![39m
+2022-07-19 02:58:51:5851 [37mdebug[39m: [37mExpress is listening at http://localhost:5000[39m
+2022-07-19 03:00:46:046 [37mdebug[39m: [37mExpress is listening at http://localhost:5000[39m
+2022-07-19 03:00:50:050 [31merror[39m: [31mNo players found ![39m
+2022-07-19 17:26:46:2646 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-19 17:29:43:2943 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-19 17:30:27:3027 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-07-19 17:32:20:3220 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m

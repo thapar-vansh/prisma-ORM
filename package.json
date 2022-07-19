@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -c ./jest.unit.json",
-    "build": "tsc -p .",
     "test:coverage": "jest --coverage -c ./jest.unit.json",
-    "start": "node dist/src/index.js",
+    "start": "tsc && node dist/src/index.js",
     "start:dev": "nodemon src/index.ts"
   },
   "author": "Vansh Thapar",

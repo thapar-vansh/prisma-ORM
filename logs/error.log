@@ -168,3 +168,5 @@
 [31m  19     const teamStats = yield (0, teamStatsService_1.addTeamStats)();[39m
 [31m→ 20     const team = yield index_1.default.team.create([39m
 [31m  Foreign key constraint failed on the field: `team_id_fkey (index)`[39m
+2022-07-19 02:57:45:5745 [31merror[39m: [31mNo players found ![39m
+2022-07-19 03:00:50:050 [31merror[39m: [31mNo players found ![39m
