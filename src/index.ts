@@ -9,7 +9,7 @@ import { Logger } from './lib/logger'
 const prisma = new PrismaClient()
 export default prisma
 
-const app = express()
+export const app = express()
 dotenv.config()
 
 const { API_PORT } = process.env
@@ -19,7 +19,6 @@ app.use(bodyParser.json())
 
 app.use('/player', playerRoutes)
 app.use('/team', teamRoutes)
-
 app.listen(port, () => {
   return Logger.debug(`Express is listening at http://localhost:${port}`)
 })

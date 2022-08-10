@@ -1,6 +1,11 @@
-actions: []
+actions:
+  - name: InsertPlayers
+    definition:
+      kind: synchronous
+      handler: http://host.docker.internal:3000/player
 custom_types:
   enums: []
   input_objects: []
-  objects: []
+  objects:
+    - name: InsertPlayersOutput
   scalars: []

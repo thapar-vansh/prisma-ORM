@@ -8,15 +8,16 @@ import {
   getPlayersService,
   updatePlayerService,
 } from '../services/playerService'
+import { InsertPlayerOutput } from '../src/types'
 
 export const addPlayer = async (
   req: Request,
   res: Response
 ): Promise<Response> => {
   try {
-    const { name, country } = req.body
-    await addPlayerService(name, country)
-    return res.send('Player added')
+    const { name, country } = req.body.input
+    const player : InsertPlayerOutput= await addPlayerService(name,country)
+    return res.json({name:player.name})
   } catch (e) {
     Logger.error(e)
     if (e instanceof Error) {

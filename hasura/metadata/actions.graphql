@@ -1,0 +1,11 @@
+type Mutation {
+  InsertPlayers(
+    name: String!
+    country: String!
+  ): InsertPlayersOutput
+}
+
+type InsertPlayersOutput {
+  name: String!
+}
+

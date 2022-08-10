@@ -282,3 +282,716 @@
 2022-07-19 18:33:18:3318 [37mdebug[39m: [37mExpress is listening at http://localhost:5000[39m
 2022-07-22 17:59:53:5953 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
 2022-07-22 18:00:30:030 [31merror[39m: [31mNo teams found[39m
+2022-08-01 14:51:32:5132 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-01 15:20:04:204 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-01 15:27:07:277 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-01 15:27:14:2714 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-01 15:27:23:2723 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:00:37:037 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:01:01:11 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:01:22:122 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m           country: 'Vansh@123'[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:01:58:158 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:02:59:259 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:05:56:556 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:06:01:61 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:08:23:823 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:08:30:830 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:10:12:1012 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:10:17:1017 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:10:40:1040 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:10:43:1043 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:10:44:1044 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-03 15:11:17:1117 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:12:49:1249 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:13:48:1348 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:15:42:1542 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:16:28:1628 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:22:14:2214 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 15:22:58:2258 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 18:50:31:5031 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 18:56:17:5617 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 18:57:02:572 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 18:58:03:583 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 18:59:55:5955 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-03 19:00:42:042 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-04 18:04:26:426 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:21:12:2112 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:36:03:363 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:37:20:3720 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:37:49:3749 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:38:34:3834 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:47:43:4743 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:48:27:4827 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:49:26:4926 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:50:28:5028 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:50:39:5039 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:51:22:5122 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:59:04:594 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 18:59:37:5937 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-05 19:02:01:21 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 19:02:10:210 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-05 19:02:59:259 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-05 19:03:06:36 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 16:37:19:3719 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 16:57:18:5718 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5433`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5433`.[39m
+2022-08-08 16:58:21:5821 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 16:58:27:5827 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 17:08:00:80 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 17:09:20:920 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:03:57:357 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:04:43:443 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:07:57:757 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:08:05:85 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:13:57:1357 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:18:08:188 [31merror[39m: [31mCannot destructure property 'name' of 'req.body.input' as it is undefined.[39m
+2022-08-08 23:18:34:1834 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:18:42:1842 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:36:50:3650 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:36:58:3658 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:39:59:3959 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:40:13:4013 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:40:48:4048 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:41:24:4124 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:42:23:4223 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:43:00:430 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:45:39:4539 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:46:12:4612 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Authentication failed against database server at `localhost`, the provided database credentials for `postgres` are not valid.[39m
+
+[31mPlease make sure to provide valid database credentials for the database server at `localhost`.[39m
+2022-08-08 23:48:50:4850 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:48:54:4854 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  The provided database string is invalid. Error parsing connection string: invalid port number in database URL. Please refer to the documentation in https://www.prisma.io/docs/reference/database-reference/connection-urls for constructing a correct connection string. In some cases, certain characters must be escaped. Please check the string for any illegal characters.[39m
+2022-08-08 23:50:43:5043 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:50:46:5046 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Database `mydb` does not exist on the database server at `localhost:5432`.[39m
+2022-08-08 23:50:55:5055 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Database `mydb` does not exist on the database server at `localhost:5432`.[39m
+2022-08-08 23:51:35:5135 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:51:43:5143 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  The table `public.player` does not exist in the current database.[39m
+2022-08-08 23:53:30:5330 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:53:34:5334 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  The table `public.player` does not exist in the current database.[39m
+2022-08-08 23:54:19:5419 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:54:41:5441 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:55:40:5540 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-08 23:57:48:5748 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:57:58:5758 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `localhost`:`8080`[39m
+
+[31mPlease make sure your database server is running at `localhost`:`8080`.[39m
+2022-08-08 23:58:30:5830 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:58:41:5841 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `localhost`:`5433`[39m
+
+[31mPlease make sure your database server is running at `localhost`:`5433`.[39m
+2022-08-08 23:59:13:5913 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-08 23:59:23:5923 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `localhost`:`5434`[39m
+
+[31mPlease make sure your database server is running at `localhost`:`5434`.[39m
+2022-08-09 00:00:49:049 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 00:01:01:11 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-09 00:02:45:245 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 00:02:53:253 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-09 00:09:21:921 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 00:10:11:1011 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  The table `public.player` does not exist in the current database.[39m
+2022-08-09 00:13:13:1313 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:28:19:2819 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:33:09:339 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create({[39m
+[31m         data: {[39m
+[31m       +   name: String,[39m
+[31m       +   country: String[39m
+[31m         }[39m
+[31m       })[39m
+
+[31mArgument name for data.name is missing.[39m
+[31mArgument country for data.country is missing.[39m
+
+[31mNote: Lines with + are required[39m
+[31m[39m
+2022-08-09 19:34:29:3429 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:34:34:3434 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:34:35:3435 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:36:04:364 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:36:11:3611 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-09 19:37:04:374 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:37:37:3737 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `docker.node.internal`:`5432`[39m
+
+[31mPlease make sure your database server is running at `docker.node.internal`:`5432`.[39m
+2022-08-09 19:38:34:3834 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `docker.node.internal`:`5432`[39m
+
+[31mPlease make sure your database server is running at `docker.node.internal`:`5432`.[39m
+2022-08-09 19:38:48:3848 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:38:53:3853 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:46:31:4631 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:46:40:4640 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:50:31:5031 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:51:21:5121 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:51:25:5125 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-09 19:52:18:5218 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:52:25:5225 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Authentication failed against database server at `localhost`, the provided database credentials for `prisma` are not valid.[39m
+
+[31mPlease make sure to provide valid database credentials for the database server at `localhost`.[39m
+2022-08-09 19:55:04:554 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:55:15:5515 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.findMany()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:20:49[39m
+
+[31m  17   return result[39m
+[31m  18 }[39m
+[31m  19 export const getPlayersService = async (): Promise<player[]> => {[39m
+[31m→ 20   const players: player[] = await prisma.player.findMany([39m
+[31m  Database `mydb` does not exist on the database server at `localhost:5432`.[39m
+2022-08-09 19:55:45:5545 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-09 19:56:23:5623 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 14:29:29:2929 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 14:30:09:309 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-10 14:31:53:3153 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 14:32:10:3210 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `postgres` was denied access on the database `postgres.public`[39m
+2022-08-10 14:33:23:3323 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 14:33:28:3328 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `prisma` was denied access on the database `postgres.public`[39m
+2022-08-10 14:33:28:3328 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  User `prisma` was denied access on the database `postgres.public`[39m
+2022-08-10 14:35:35:3535 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 17:20:52:2052 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
+2022-08-10 19:28:38:2838 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-10 19:30:04:304 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-10 19:32:24:3224 [37mdebug[39m: [37mExpress is listening at http://localhost:3000[39m
