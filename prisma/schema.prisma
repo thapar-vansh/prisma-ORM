@@ -27,3 +27,9 @@ model team_stats {
   matches_lost  Int
 }
 
+model users {
+  id         Int      @id @default(autoincrement())
+  username   String   @unique
+  password   String
+  type       String
+}

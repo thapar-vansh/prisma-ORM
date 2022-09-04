@@ -1,0 +1,3 @@
+- "!include public_player.yaml"
+- "!include public_users.yaml"
+- "!include public_users_types.yaml"

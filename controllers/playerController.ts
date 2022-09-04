@@ -15,9 +15,10 @@ export const addPlayer = async (
   res: Response
 ): Promise<Response> => {
   try {
+    console.log(req)
     const { name, country } = req.body.input
-    const player : InsertPlayerOutput= await addPlayerService(name,country)
-    return res.json({name:player.name})
+    const player: InsertPlayerOutput = await addPlayerService(name, country)
+    return res.json({ name: player.name })
   } catch (e) {
     Logger.error(e)
     if (e instanceof Error) {
@@ -43,6 +44,7 @@ export const getPlayers = async (
   }
 }
 
+// getPlayers()
 export const updatePlayer = async (
   req: Request,
   res: Response

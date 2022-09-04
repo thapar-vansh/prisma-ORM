@@ -1,11 +1,27 @@
 type Mutation {
-  InsertPlayers(
-    name: String!
-    country: String!
-  ): InsertPlayersOutput
+  loginUser(
+    username: String!
+    password: String!
+  ): loginUserOutput
 }
 
-type InsertPlayersOutput {
-  name: String!
+type Mutation {
+  registerUser(
+    username: String!
+    type: String!
+    password: String!
+  ): registerUserOutput
+}
+
+type SampleOutput {
+  accessToken: String!
+}
+
+type registerUserOutput {
+  id: Int!
+}
+
+type loginUserOutput {
+  accessToken: String!
 }
 

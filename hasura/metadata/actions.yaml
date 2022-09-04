@@ -1,11 +1,17 @@
 actions:
-  - name: InsertPlayers
+  - name: loginUser
     definition:
       kind: synchronous
-      handler: http://host.docker.internal:3000/player
+      handler: http://host.docker.internal:3000/user/login
+  - name: registerUser
+    definition:
+      kind: synchronous
+      handler: http://host.docker.internal:3000/user/register
 custom_types:
   enums: []
   input_objects: []
   objects:
-    - name: InsertPlayersOutput
+    - name: SampleOutput
+    - name: registerUserOutput
+    - name: loginUserOutput
   scalars: []

@@ -805,3 +805,193 @@
 [31m  Can't reach database server at `postgres`:`5432`[39m
 
 [31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-12 15:14:40:1440 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$MxZokZ3jLxLtLfDkHvOwBeMi/jyY8E0VxAOItP491Ujjt2KyZbVMy"}}}}[39m
+2022-08-12 15:16:19:1619 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$K1OamPRRKKiPMS2NUJ2wxuyhdJW3kvPQRIdTMpqYwHeTooranc4oK"}}}}[39m
+2022-08-12 15:20:20:2020 [31merror[39m: [31mdata and salt arguments required[39m
+2022-08-12 17:01:35:135 [31merror[39m: [31mCannot destructure property 'username' of 'req.body.input' as it is undefined.[39m
+2022-08-12 17:01:57:157 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$8xMT5i/GKx8BHXetuyauNuUhBNAvBOkF3dLRjmj71cSf8KOrRptM2"}}}}[39m
+2022-08-12 17:03:32:332 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"ran","password":"$2b$10$smr8pw7UO0f2lif9SWg88OHdnV6tNCVeasgPpCpypyv0zZXNeu30S"}}}}[39m
+2022-08-12 17:04:50:450 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"ran","password":"$2b$10$iV3rilaPhXBJ1CLBGCuJt.LTU4tGhzEbkCUIIRo8OL5gEhUDTMbq2"}}}}[39m
+2022-08-12 17:05:24:524 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"ran","password":"$2b$10$p3Jzoy0tqZoDNnVft6i/seyDTyMrEW.IX2nMktvJCRYNkuGdb46fO"}}}}[39m
+2022-08-12 17:12:11:1211 [31merror[39m: [31mCannot destructure property 'username' of 'req.body.input' as it is undefined.[39m
+2022-08-12 17:12:43:1243 [31merror[39m: [31minvalid x-hasura-admin-secret/x-hasura-access-key: {"response":{"errors":[{"extensions":{"path":"$","code":"access-denied"},"message":"invalid x-hasura-admin-secret/x-hasura-access-key"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$e6hIxEaHPur99Jmf7wzUOuLS0vKq9.SaahTuG9LcVC1ZK81HZmRdK"}}}}[39m
+2022-08-12 17:17:33:1733 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$jIFz1JuNoqHSApvacFjm5ePE40GcCNb02G7o1uUV3JHeqC.NTCM0q"}}}}[39m
+2022-08-12 17:18:54:1854 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$Kpb4ObAcilzjOECjc/59H.NyF5lNLX..7bBvDiLW0ll2a7Bb3EMXW"}}}}[39m
+2022-08-12 17:19:42:1942 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$a8i6IYuGvnB/Z1EGuK1CFuk6VbF2r0ZBhe2BgQfqILT1oP1wnrycK"}}}}[39m
+2022-08-12 17:20:32:2032 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"ran","password":"$2b$10$t55p4kh/q/OjlAaTplU5VOf469ATRq457NLS.WI1CEfI0MlWvJbcq"}}}}[39m
+2022-08-12 17:21:42:2142 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"ran","password":"$2b$10$oJH9VfKg0QvYATEyXQcG3.YNG9Rij4ujqWTNJSExpjAj92TDjpL0e"}}}}[39m
+2022-08-12 19:08:07:87 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-12 19:21:29:2129 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-12 19:23:47:2347 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 18:35:03:353 [31merror[39m: [31mdata and salt arguments required[39m
+2022-08-15 18:35:51:3551 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$f6sDz/m.axa8afoJU/W/ZecHbqxnLR2/O8eFLwrk7QY7Qqc5.sFtG"}}}}[39m
+2022-08-15 18:41:53:4153 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 18:59:57:5957 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 19:01:23:123 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 23:46:34:4634 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 23:48:31:4831 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-15 23:53:47:5347 [31merror[39m: [31mCannot destructure property 'username' of 'req.body.input' as it is undefined.[39m
+2022-08-15 23:54:27:5427 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vansh","password":"$2b$10$GJ88rQvMuttofDq5nTWkCO.Iy/orhBpG7YckjwAskdAPZuu0wNr4y"}}}}[39m
+2022-08-15 23:55:56:5556 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-16 18:33:42:3342 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-16 18:34:40:3440 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Can't reach database server at `postgres`:`5432`[39m
+
+[31mPlease make sure your database server is running at `postgres`:`5432`.[39m
+2022-08-16 18:39:51:3951 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Authentication failed against database server at `localhost`, the provided database credentials for `postgres` are not valid.[39m
+
+[31mPlease make sure to provide valid database credentials for the database server at `localhost`.[39m
+2022-08-16 18:40:47:4047 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  Database `prisma` does not exist on the database server at `localhost:5432`.[39m
+2022-08-16 18:46:27:4627 [31merror[39m: [31mdata and salt arguments required[39m
+2022-08-16 18:47:04:474 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vnsh","password":"$2b$10$nkzVDwdjBwkCbSW0Q1SjZegdYbuqDDLCQUZD0e4uiDjRtN0j0jFRi"}}}}[39m
+2022-08-16 18:49:48:4948 [31merror[39m: [31mfield "insert_user_one" not found in type: 'mutation_root': {"response":{"errors":[{"extensions":{"path":"$.selectionSet.insert_user_one","code":"validation-failed"},"message":"field \"insert_user_one\" not found in type: 'mutation_root'"}],"status":200,"headers":{}},"request":{"query":"\n        mutation registerUser($user: user_insert_input!) {\n          insert_user_one(object: $user) {\n            id\n          }\n        }\n      ","variables":{"user":{"username":"vnsh","password":"$2b$10$ZJ9zhmRDfjLMERGBNsiqJORp.SDdkn4XuEs5NSeAYq7WP8lU5thqC"}}}}[39m
+2022-09-01 18:42:57:4257 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  The table `public.player` does not exist in the current database.[39m
+2022-09-01 18:43:42:4342 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  The table `public.player` does not exist in the current database.[39m
+2022-09-01 18:44:31:4431 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  The table `public.player` does not exist in the current database.[39m
