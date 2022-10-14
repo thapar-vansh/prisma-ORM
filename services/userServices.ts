@@ -33,25 +33,26 @@ export const loginUser = async (
     },
   }) as users
   if (await bcrypt.compare(password, user.password)) {
-    const token: Promise<string> = generateToken(user.username, user.id)
+    const token: Promise<string> = generateToken(user.id, user.type)
     return token
   } else {
     throw new Error('Invalid credentials')
   }
 }
 
-export const generateToken = async (username: string, id: number): Promise<string> => {
+export const generateToken = async (id: number, type: string): Promise<string> => {
   const privateKey: string = process.env.HASURA_JWT_PRIVATE_KEY ? process.env.HASURA_JWT_PRIVATE_KEY : ""
   const token: string = jwt.sign(
     {
-      sub: id,
+      sub: String(id),
       iat: Math.round(new Date().getTime() / 1000),
       created: new Date().toISOString(),
       "https://hasura.io/jwt/claims": {
-        "x-hasura-allowed-roles": ["user"],
-        "x-hasura-default-role": "user",
-        "x-hasura-role": "user",
-        "x-hasura-user-id": String(id),
+        "x-hasura-allowed-roles": ["FREE", "PREMIUM", "PRO"],
+        "x-hasura-default-role": "FREE",
+        "x-hasura-role": type,
+        "x-hasura-user-id": String(id)
+
       }
     },
     privateKey,

@@ -995,3 +995,12 @@
 [31m   7 ): Promise<player> => {[39m
 [31m→  8   const result = await prisma.player.create([39m
 [31m  The table `public.player` does not exist in the current database.[39m
+2022-09-05 19:14:58:1458 [31merror[39m: [31m[39m
+[31mInvalid `prisma.player.create()` invocation in[39m
+[31mC:\Projects\Sixer Internship\prisma-ORM\services\playerService.ts:8:38[39m
+
+[31m   5   name: string,[39m
+[31m   6   country: string[39m
+[31m   7 ): Promise<player> => {[39m
+[31m→  8   const result = await prisma.player.create([39m
+[31m  The table `public.player` does not exist in the current database.[39m
