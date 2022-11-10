@@ -1,4 +1,0 @@
-table:
-  schema: public
-  name: users_types
-is_enum: true

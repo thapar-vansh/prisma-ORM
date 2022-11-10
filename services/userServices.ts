@@ -3,7 +3,6 @@ import jwt, { Secret } from 'jsonwebtoken'
 import prisma from '../src/index'
 import { users } from '@prisma/client'
 
-
 export const registerUser = async (
   username: string,
   password: string,
@@ -14,7 +13,7 @@ export const registerUser = async (
     data: {
       username: username as string,
       password: hashedPassword as string,
-      type: type
+      type: type,
     },
   })
   if (!result) {
@@ -27,11 +26,11 @@ export const loginUser = async (
   username: string,
   password: string
 ): Promise<string> => {
-  const user: users = await prisma.users.findUnique({
+  const user: users = (await prisma.users.findUnique({
     where: {
-      username: username
+      username: username,
     },
-  }) as users
+  })) as users
   if (await bcrypt.compare(password, user.password)) {
     const token: Promise<string> = generateToken(user.id, user.type)
     return token
@@ -40,23 +39,27 @@ export const loginUser = async (
   }
 }
 
-export const generateToken = async (id: number, type: string): Promise<string> => {
-  const privateKey: string = process.env.HASURA_JWT_PRIVATE_KEY ? process.env.HASURA_JWT_PRIVATE_KEY : ""
+export const generateToken = async (
+  id: number,
+  type: string
+): Promise<string> => {
+  const privateKey: string = process.env.HASURA_JWT_PRIVATE_KEY
+    ? process.env.HASURA_JWT_PRIVATE_KEY
+    : ''
   const token: string = jwt.sign(
     {
       sub: String(id),
       iat: Math.round(new Date().getTime() / 1000),
       created: new Date().toISOString(),
-      "https://hasura.io/jwt/claims": {
-        "x-hasura-allowed-roles": ["FREE", "PREMIUM", "PRO"],
-        "x-hasura-default-role": "FREE",
-        "x-hasura-role": type,
-        "x-hasura-user-id": String(id)
-
-      }
+      'https://hasura.io/jwt/claims': {
+        'x-hasura-allowed-roles': ['user', 'FREE', 'PREMIUM', 'PRO', 'ADMIN'],
+        'x-hasura-default-role': 'FREE',
+        'x-hasura-user-id': String(id),
+        'x-hasura-auth-role': type,
+      },
     },
     privateKey,
-    { "algorithm": "HS256" }
+    { algorithm: 'HS256' }
   )
   return token
 }

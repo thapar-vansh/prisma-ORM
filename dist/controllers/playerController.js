@@ -14,9 +14,10 @@ const logger_1 = require("../src/lib/logger");
 const playerService_1 = require("../services/playerService");
 const addPlayer = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, country } = req.body;
-        yield (0, playerService_1.addPlayerService)(name, country);
-        return res.send('Player added');
+        console.log(req);
+        const { name, country } = req.body.input;
+        const player = yield (0, playerService_1.addPlayerService)(name, country);
+        return res.json({ name: player.name });
     }
     catch (e) {
         logger_1.Logger.error(e);
@@ -41,6 +42,7 @@ const getPlayers = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 exports.getPlayers = getPlayers;
+// getPlayers()
 const updatePlayer = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const id = req.params.id;

@@ -1,7 +1,0 @@
-table:
-  schema: public
-  name: team
-object_relationships:
-  - name: team_stat
-    using:
-      foreign_key_constraint_on: id
