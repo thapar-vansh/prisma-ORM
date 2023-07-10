@@ -75,6 +75,7 @@ Clone the project
 
 ```bash
   git clonehttps://github.com/thapar-vansh/prisma-ORM.git
+```
 
 Go to the project directory
 
